@@ -1,1 +1,2 @@
-The file to open is mnplyGUI.py in the "monopoly" folder. The raw database is in 
+This project is a monopoly banker interface which tracks a player's name, bank balance, and gameplay status. The interface also allows the banker to save player data in a database to save in case of pausing or stopping the game. The interface can also export existing data in the database to a csv file and vice versa, can import csv files to add new player data in the database.
+The file to open is mnplyGUI.py in the "monopoly" folder. The raw database is in gamesaves.db and the data is exported in  mnply.csv. The sampleplayers.csv is the sample csv file to be imported.
