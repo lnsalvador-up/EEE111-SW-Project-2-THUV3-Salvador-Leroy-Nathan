@@ -6,6 +6,10 @@ from tkinter import filedialog
 import tkinter as tk
 import sqlite3
 import csv
+import os
+
+dir = os.path.dirname(os.path.abspath(__file__))
+path1 = os.path.join(dir, 'database')
 
 def csv_import():
    conn = sqlite3.connect('gamesaves.db')
@@ -54,7 +58,7 @@ def delete_data1():
 def data_disp():
     disp = tk.Tk()
     disp.title("Player Data")
-    disp.iconbitmap(r"C:\Users\Nathan Salvador\EEE111\monopoly\database")
+    disp.iconbitmap(path1)
     disp.geometry('500x500')
 
     conn_disp = sqlite3.connect('gamesaves.db')
